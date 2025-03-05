@@ -616,7 +616,6 @@ setTimeout(() =>{
     .catch(error => console.log(error))
 }, 2000) */
 
-
 /* 
 const myAge = (age) =>{
   return new Promise((resolve, reject) =>{
@@ -671,3 +670,25 @@ checkWaterTemp(-10)
     console.log(err)
   }); */
 
+const checkInternetSpeed = (speed) => {
+  return new Promise((resolve, reject) => {
+    console.log("Checking internet speed...");
+
+    setTimeout(() => {
+      if (speed < 5) reject("🐌 Slow connection!");
+      else if (speed > 5 && speed < 20) resolve("👍 Normal speed!");
+      else if (speed > 20) resolve("🚀 High speed!");
+    }, 1000);
+  });
+};
+
+const testSpeeds = () => {
+  const speeds = [3, 10, 25];
+  speeds.forEach((speed) => {
+    checkInternetSpeed(speed)
+      .then((result) => console.log(`Speed ${speed} Mbps: ${result}`))
+      .catch((error) => console.log(`Speed ${speed} Mbps: ${error}`));
+  });
+};
+
+testSpeeds();
