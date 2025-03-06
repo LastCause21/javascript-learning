@@ -21,9 +21,14 @@ javascript-learning/
 
 ### March 2025
 #### Week 1 (March 4-10)
-- Learned Promises
+- Learned Promises and their implementation
 - Practiced with setInterval and setTimeout
 - Created basic Promise examples
+- Worked with asynchronous operations
+- Learned Browser Interaction methods:
+  - alert() - showing messages
+  - prompt() - getting user input
+  - confirm() - asking for user confirmation
 
 ### February 2025
 #### Week 4 (February 25-29)
@@ -41,4 +46,5 @@ javascript-learning/
 - [x] Functions and Arrays
 - [x] Objects
 - [x] Promises
+- [x] Browser Interaction Methods
 - [ ] Async/Await (Coming soon)
